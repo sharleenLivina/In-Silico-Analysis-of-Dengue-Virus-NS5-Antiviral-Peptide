@@ -5,7 +5,7 @@ STAT2 is an essential protein to promote host innate immune response. Without ST
 
 Employing structure-based rationale design, peptides are derived from the human signal transducer and activator of transcription 2 (STAT2). The peptides designed is to inhibit the interaction of STAT2-DENV2 NS5 through competitive inhibition. 
 
-Each amino acid residues ateach position of the peptide is mutated into 20 canonical amino acids in protein. 
+Each amino acid residues at each position of the peptide is mutated into 20 canonical amino acids in protein. 
 WT_Peptide 1 = 189-205 (17 a.a.)
 
 ## In Silco Saturated Mutagenesis using MutateX 
