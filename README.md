@@ -1,4 +1,4 @@
-# In-Silico-Analysis-of-Dengue-Virus-NS5-Antiviral-Peptide
+# In-Silico-Analysis-of-Dengue-Virus-2-NS5-Antiviral-Peptide
 Data of mutation scans of antiviral peptides that can competitively bind to dengue virus 2 (DENV2) NS5
 
 STAT2 is an essential protein in promoting host innate immune response. Without STAT2, interferon signalling pathway responsible for protecting the host from viral infections is disrupted. DENV NS5 viral protein degrades STAT2 to establish an infection. So, peptides were designed to inhibit this protein-protein interaction.
