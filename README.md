@@ -11,7 +11,7 @@ WT_Peptide 1 = 189-205 (17 a.a.)
 
 WT_Peptide 2 = 206-219 (14 a.a.)
 
-WT_Peptide 3 = 
+WT_Peptide 3 = 285-303 (19 a.a.)
 
 Note:WT (wild type)
 
