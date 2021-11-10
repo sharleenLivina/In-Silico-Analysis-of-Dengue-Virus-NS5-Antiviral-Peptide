@@ -1,0 +1,34 @@
+
+-- Install Ubuntu and VirtualBox
+-- Clone the repository: git clone https://github.com/ELELAB/mutatex.git
+
+--Run command
+sudo apt-get update
+sudo apt-get upgrade
+
+cd mutatex
+python setup.py install
+. mutatex-env/bin/activate
+cd Desktop/
+ls
+cd peptide2
+ls
+
+### FOLDX 5.0
+export FOLDX_BINARY=/home/user/foldx/foldx
+export FOLDX_ROTABASE=/home/user/foldx/rotabase.txt
+
+### RepairPDB, BuildModel, AnalyseComplex
+mutatex new.pdb -m mutation_list.txt -f suite5 -R repair_runfile_template.txt -M mutate_runfile_template.txt -I interface_runfile_template.txt -B -q position_list.txt -l -p 1
+
+### Generation of heatmap
+ddg2heatmap -p new_model0_checked.pdb -l mutation_list.txt -q position_list.txt -d results/mutation_ddgs/new_model0_checked_Repair -s 19 -n -3.0 -x 5.0 -o heatmap.png	 
+
+### -T (stem, box, violin, single, scatter)
+ddg2distribution -p new_model0_checked.pdb -d results/mutation_ddgs/new_model0_checked_Repair -l mutation_list.txt -q position_list.txt -o distribution.png -s 19 -x 5 -n -5 -T scatter	 
+
+## Energy distribution of all mutations
+ddg2density -p new_model0_checked.pdb -d results/mutation_ddgs/new_model0_checked_Repair -l mutation_list.txt -q position_list.txt -o distribution.png 	 
+
+### Generation of Excel file
+ddg2excel -p new_model0_checked.pdb -l mutation_list.txt -q position_list.txt -d results/mutation_ddgs/new_model0_checked_Repair
